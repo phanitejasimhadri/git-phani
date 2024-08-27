@@ -1,10 +1,11 @@
 #!/bin/bash
 
 NUMBER=$1
+REFER=$2
 
-if [ $NUMBER -gt 25 ] #gt, lt, eq, -ne, -ge, -le
+if [ $NUMBER -gt $REFER ] #gt, lt, eq, -ne, -ge, -le
 then
-    echo "Given Number: $NUMBER is greater than 25"
+    echo "Given Number: $NUMBER is greater than $REFER"
 else
-    echo "Given number: $NUMBER is less than 25"
+    echo "Given number: $NUMBER is less than $REFER"
 fi
